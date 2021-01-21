@@ -8,6 +8,7 @@ public:
   bool Add (int n);
   bool isEmtpy();
   bool search (int s);
+  void print();
 private:
   int *data;
   unsigned int size;
@@ -50,4 +51,13 @@ bool Bag :: search (int s){
 		if(data[i]==s) return true;
 	}
 	return false;
+}
+
+void Bag :: print(){
+	
+}
+
+int main(){
+	Bag bag;
+	bag.add(1); bag.add(2); bag.add(3); bag.add(4); bag.add(5);
 }
