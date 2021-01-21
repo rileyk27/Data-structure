@@ -7,8 +7,19 @@ public:
   void Remove (int n);
   bool Add (int n);
   bool isEmtpy();
+  bool search (int s);
 private:
+  int *data;
+  unsigned int size;
+  unsigned int capacity;
 };
+
+Bag :: Bag (){
+  data = NULL;
+  size = 0;
+  cin>>capacity;
+  data = new int[capacity];
+}
 
 bool Bag :: Add (int n){
   if(size==capacity) return false;
@@ -34,3 +45,9 @@ bool Bag :: isEmtpy{
   if(size==0) return false;
 }
 
+bool Bag :: search (int s){
+	for(int i=0;i<size;i++){
+		if(data[i]==s) return true;
+	}
+	return false;
+}
