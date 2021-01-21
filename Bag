@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+
+class Bag {
+public:
+  Bag (
+  void Remove (int n);
+  bool Add (int n);
+  bool isEmtpy();
+private:
+};
+
+bool Bag :: Add (int n){
+  if(size==capacity) return false;
+  else{
+    data[size++] = n;
+    return ture;
+}
+
+void Bag ::Remove(int n){
+	if (isEmtpy() == true) 
+		cout<<"This can't '";
+	for (int i = 0; i < size; i++){    //  search for the item n
+		if (data[i] == n){
+			data[i]=data[i+1];
+			for(int j=i+1;j<size;j++){
+				data[j]=data[j+1];
+			}
+		}	
+	}
+}
+
+bool Bag :: isEmtpy{
+  if(size==0) return false;
+}
+
