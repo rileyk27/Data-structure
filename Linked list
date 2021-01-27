@@ -7,30 +7,27 @@ class Node:
     
 class NodeManag:
   def __init__(self, data):
-  self.head = Node(data)
+    self.head = Node(data)
   
   def add(data): #add new data
-    node = head
-    while = node.next:
+    if self.head=='':
+      self.head = Node(data)
+    else:
+      node = self.head
+      while = node.next:
+        node = node.next
+      node.next = Node(data)
+      
+  def desc(self):
+    node = self.head
+    while node:
+      print(node.data)
       node = node.next
-     node.next = Node(data)
-     
-node1 = Node(1)
-node2 = Node(2)
-node.next = node2
-head = node1
-for index in range(2, 10):
-  add(index)
+  
+linkedlist1= NodeManage(0)
+linkedlist1.desc()
 
-node3 = Node(1.5)
-
-node = head
-while node.next: #loop till the node.next excist
-  print(node.data)
-  node = node.next
-print(node.data)
-
-node_next = node.next
-node.next = node3
-node3.next = node_next
+for data in range(1, 10)
+  linkedlist1.add(data)
+linkedlist1.desc()
 
