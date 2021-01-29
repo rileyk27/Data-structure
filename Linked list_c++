@@ -185,3 +185,44 @@ int main(int argc, const char * argv[]) {
 	}
 
 }
+
+===========================================================
+
+
+int Bag::min(){
+	link back=first;
+	link front=first->next;
+	int mini=first->data;
+	int nex;
+	
+	while(true){
+		if(front==NULL){
+			cout<<"The mininum of this Bag list is "<< mini<<endl;
+			first = first->next;
+			break;
+		}
+		else {
+			nex = front->data;
+			if(mini>nex) mini=nex;
+			cout<<"The mininum of this Bag list is "<< mini<<endl;
+			first = first->next;
+			break;
+		}
+	}
+}
+===========================================================
+    link it = first;    
+	int mini;
+	mini=it->data;
+	int nex;
+			
+    while (it != NULL) {
+
+        it = it->next;
+		nex=it->data;
+		if(mini>nex) mini=nex;
+		cout<<"The mininum of this Bag list is "<< mini<<endl;
+    }
+    
+	cout<<"The mininum of this Bag list is "<< mini<<endl;
+	return 0;
