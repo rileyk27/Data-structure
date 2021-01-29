@@ -113,27 +113,24 @@ unsigned short Bag::getSize ()
 
 int Bag::min(){
 
-	link fir = first;   
-	int mini=first->data; //Initial value
+	link it=first;
+	link com;
+	int mini=it->data;
 	int nex;
 	
-    while (true) {
-    	if(fir->next==NULL){
-    		mini=first->data;
-    		cout<<"The mininum of this Bag list is "<< mini<<endl;
-			break;
-		}
-    	else{
-    		link sec = fir->next;
-    		nex=(*(fir->next)).data;
-    		if(mini>nex) mini=nex;
-    		cout<<"The mininum of this Bag list is "<< mini<<endl;
-    		break;
-		}
-    }	
+	if(it->next==NULL){
+		cout<<"The mininum of this Bag list is "<< mini<<endl;
+	}
+	else{
+		com=it->next;
+    	while (com->next!= NULL) {
+			nex=com->data;
+			if(mini>nex)  mini=nex;
+			com=com->next;	
+    		}
+		cout<<"The mininum of this Bag list is "<< mini<<endl;
+	}
 }
-
-
 
 bool Bag::has(int str)   // Check if the bag has item "str", // You can return bool too
 {
@@ -157,7 +154,7 @@ int main(int argc, const char * argv[]) {
 	char sel = ' ';
 	while (sel != 'e')
 	{
-		cout << "(i)nsert, (d)elete, (s)earch, (e)xit:   ";
+		cout << "(i)nsert, (d)elete, (s)earch, (m)minimum, (a)average, (x)maximum, (e)xit:   ";
 		cin >> sel;
 		switch(sel)
 		{
@@ -166,7 +163,6 @@ int main(int argc, const char * argv[]) {
 					cin >> tempStr;
 					bigBag.add (tempStr);
 					bigBag.ListBag();
-					bigBag.min();
 					break;
 			case 'd':
 					cout << "\nint to be deleted: ";
@@ -179,12 +175,16 @@ int main(int argc, const char * argv[]) {
 				    cin >> tempStr;
 					cout << bigBag.has(tempStr) << endl;
 					break;
+			case 'm':
+					bigBag.min();
+					break;
 			default:
 					break;
 		}
 	}
 
 }
+
 
 ===========================================================
 
@@ -226,3 +226,5 @@ int Bag::min(){
     
 	cout<<"The mininum of this Bag list is "<< mini<<endl;
 	return 0;
+	
+===============================================================
