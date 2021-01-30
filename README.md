@@ -25,5 +25,12 @@
      - FILO : Data management policy that extracts the data that was put first and last
      - Push() : push data onto the stack
      - pop() : pop data off the stack
+  * Advantages
+     - simple structure, easy to implement
+  * Disadvantages
+     - The maximum number of data must be determined in advance
+     - In python, recursive functions can be called up to 1000 times
+     - storage space may be wasted
+     - The maximum number of storage spaces must be secured in advance
      
      
