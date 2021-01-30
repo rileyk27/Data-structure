@@ -1,6 +1,18 @@
 # Data-structure
 # 1. Bag
 # 2. Hash
+  * A data structure that stores data in a key
+     - As data can be directly received through a key, the speed is dramatically increased.
+     - A normal array is used after creating as much as the Hash Table size in advance
+     - Python dictionary type is an example of hash table: directly retrieves data (value) with a key
+  * Words
+     - Hash: Converting an arbitrary value to a fixed length
+     - Hash Table: A data structure that can be directly accessed by key value operation
+     - Hashing Function: A function that can find the data location using arithmetic operations on the key.
+     - Hash Value or Hash Address: By calculating the key with a hashing function, finding the hash value, and based on this, you can consistently find the data location for the key in the hash table.
+     - Slot: Space to store one piece of data
+There may be a separate function that can extract the key for the data to be saved.
+  
 # 3. Linked list
 * I build the linked list using c++, python language
 # 4. Queue
