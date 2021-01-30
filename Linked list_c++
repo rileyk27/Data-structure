@@ -6,8 +6,7 @@
 using namespace std;
 
 // A struct to keep items
-struct item
-{
+struct item{
     int data;
     item *next;
 	item(int x, item* t) { // constructor
@@ -19,8 +18,7 @@ typedef item * link;
 
 // A class to represent Bag, which can hold and ints in an linked list
 // The items (ints) are not sorted in the list.
-class Bag
-{
+class Bag{
 public:
     Bag();							// Construction
     bool add (int str);			// Adds a new item to bag
@@ -30,13 +28,15 @@ public:
     void ListBag();					// List all items of Bag.
     unsigned short getSize();		// How many items  the Bag has
 	int min();
-
+	int avg();
+	int max();
 private:
     link first;						// A pointer to show the first node
     link last;						// A pointer to show the last node
     unsigned short size;			// how many items Bag has
 
 };
+
 Bag::Bag() // Initialize an instance of the class
 {
     size = 0;
@@ -119,16 +119,60 @@ int Bag::min(){
 	int nex;
 	
 	if(it->next==NULL){
-		cout<<"The mininum of this Bag list is "<< mini<<endl;
+		cout<<"The minimum of this Bag list is "<< mini<<endl;
 	}
 	else{
 		com=it->next;
-    	while (com->next!= NULL) {
+		
+    	while (com !=NULL) {
 			nex=com->data;
 			if(mini>nex)  mini=nex;
 			com=com->next;	
     		}
-		cout<<"The mininum of this Bag list is "<< mini<<endl;
+		cout<<"The minimum of this Bag list is "<< mini<<endl;
+	}
+}
+
+int Bag::avg(){
+
+	link front=first;
+	link com;
+	int sum=front->data;
+	float aver;
+	
+	if(front->next==NULL){
+		cout<<"The average of this Bag list is "<< sum <<endl;
+	}
+	else{
+		com=front->next;
+		while(com !=NULL){
+			sum+=(com->data);
+			com=com->next;
+		}
+    	aver=sum/size;
+		cout<<"The average of this Bag list is "<< aver <<endl;
+	}
+}
+
+int Bag::max(){
+
+	link it=first;
+	link com;
+	int maxi=it->data;
+	int nex;
+	
+	if(it->next==NULL){
+		cout<<"The maximum of this Bag list is "<< maxi<<endl;
+	}
+	else{
+		com=it->next;
+		
+    	while (com !=NULL) {
+			nex=com->data;
+			if(maxi<nex)  maxi=nex;
+			com=com->next;	
+    		}
+		cout<<"The maximum of this Bag list is "<< maxi<<endl;
 	}
 }
 
@@ -175,8 +219,14 @@ int main(int argc, const char * argv[]) {
 				    cin >> tempStr;
 					cout << bigBag.has(tempStr) << endl;
 					break;
-			case 'm':
+			case 'm'://minimum
 					bigBag.min();
+					break;
+			case 'a'://average
+					bigBag.avg();
+					break;
+			case 'x'://maximum
+					bigBag.max();
 					break;
 			default:
 					break;
@@ -184,47 +234,3 @@ int main(int argc, const char * argv[]) {
 	}
 
 }
-
-
-===========================================================
-
-
-int Bag::min(){
-	link back=first;
-	link front=first->next;
-	int mini=first->data;
-	int nex;
-	
-	while(true){
-		if(front==NULL){
-			cout<<"The mininum of this Bag list is "<< mini<<endl;
-			first = first->next;
-			break;
-		}
-		else {
-			nex = front->data;
-			if(mini>nex) mini=nex;
-			cout<<"The mininum of this Bag list is "<< mini<<endl;
-			first = first->next;
-			break;
-		}
-	}
-}
-===========================================================
-    link it = first;    
-	int mini;
-	mini=it->data;
-	int nex;
-			
-    while (it != NULL) {
-
-        it = it->next;
-		nex=it->data;
-		if(mini>nex) mini=nex;
-		cout<<"The mininum of this Bag list is "<< mini<<endl;
-    }
-    
-	cout<<"The mininum of this Bag list is "<< mini<<endl;
-	return 0;
-	
-===============================================================
