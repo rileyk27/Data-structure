@@ -14,6 +14,9 @@
 There may be a separate function that can extract the key for the data to be saved.
   
 # 3. Linked list
+
+![link](https://user-images.githubusercontent.com/48328919/106408490-2d719f80-6404-11eb-8380-d08714ed8d5e.PNG)
+
 * I build the linked list using c++, python language
 # 4. Queue
   * FIFO (First-in, first-out), or LILO (Last-in, Last-out)
@@ -46,6 +49,9 @@ There may be a separate function that can extract the key for the data to be sav
      - The maximum number of storage spaces must be secured in advance
      
 #6. Tree
+
+![tree](https://user-images.githubusercontent.com/48328919/106408474-264a9180-6404-11eb-9d4c-cdb719a59ab5.PNG)
+
  * A data structure constructed so as not to form a cycle by using nodes and branches
  * It is a structure in the form of a binary tree among trees, and is often used to implement search (search) algorithms.
  * Word
