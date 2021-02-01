@@ -1,6 +1,16 @@
 # Data-structure
-# 1. Bag
-# 2. Hash
+
+
+## 1. Bag
+
+
+
+-------------------------------------------------------------------------------------
+
+## 2. Hash
+
+<https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/315px-Hash_table_3_1_1_0_1_0_0_SP.svg.png>
+
   * A data structure that stores data in a key
      - As data can be directly received through a key, the speed is dramatically increased.
      - A normal array is used after creating as much as the Hash Table size in advance
@@ -12,13 +22,19 @@
      - Hash Value or Hash Address: By calculating the key with a hashing function, finding the hash value, and based on this, you can consistently find the data location for the key in the hash table.
      - Slot: Space to store one piece of data
 There may be a separate function that can extract the key for the data to be saved.
-  
-# 3. Linked list
+
+------------------------------------------------------------------------------------
+
+## 3. Linked list
 
 ![link](https://user-images.githubusercontent.com/48328919/106408490-2d719f80-6404-11eb-8380-d08714ed8d5e.PNG)
 
 * I build the linked list using c++, python language
-# 4. Queue
+* 
+
+-----------------------------------------------------------------------------------------------
+
+## 4. Queue
   * FIFO (First-in, first-out), or LILO (Last-in, Last-out)
   * Enqueue: Input the data to Queue
   * Dequeue: Output the data at Queue
@@ -28,7 +44,9 @@ There may be a separate function that can extract the key for the data to be sav
    * LifoQueue(): Last input data is first output
    * PriorityQueue(): Each data has priority, the height priority data is first output
    
-# 5. Stack
+ ---------------------------------------------------------------------------------------
+ 
+## 5. Stack
   * Structure with limited access to data
      - Structure in which data can be inserted or removed only at one end
   * Data structure from which the last accumulated data can be pulled out first
@@ -48,7 +66,9 @@ There may be a separate function that can extract the key for the data to be sav
      - storage space may be wasted
      - The maximum number of storage spaces must be secured in advance
      
-# 6. Tree
+ -----------------------------------------------------------------
+ 
+## 6. Tree
 
 ![tree](https://user-images.githubusercontent.com/48328919/106408474-264a9180-6404-11eb-9d4c-cdb719a59ab5.PNG)
 
@@ -64,7 +84,9 @@ There may be a separate function that can extract the key for the data to be sav
     - Sibling (Brother Node): A node with the same Parent Node
     - Depth: The maximum level that a node can have in the tree.
      
-# 7. Heap
+ --------------------------------------------------------------------------------
+ 
+## 7. Heap
 
 ![Heap](https://user-images.githubusercontent.com/48328919/106408407-0024f180-6404-11eb-8c5d-75342326d0e3.PNG)
 
