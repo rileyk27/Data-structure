@@ -59,6 +59,9 @@ There may be a separate function that can extract the key for the data to be sav
   - Depth: The maximum level that a node can have in the tree.
      
 #7. Heap
+
+![Heap](https://user-images.githubusercontent.com/48328919/106408407-0024f180-6404-11eb-8c5d-75342326d0e3.PNG)
+
  * Complete Binary Tree designed to quickly find the maximum and minimum values in the data.
  * Put the data on the heap, find the maximum and minimum values, then 𝑂(𝑙𝑜𝑔𝑛)
  * Heap structure
