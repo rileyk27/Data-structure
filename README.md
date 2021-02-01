@@ -58,3 +58,16 @@ There may be a separate function that can extract the key for the data to be sav
   - Sibling (Brother Node): A node with the same Parent Node
   - Depth: The maximum level that a node can have in the tree.
      
+#7. Heap
+ * Complete Binary Tree designed to quickly find the maximum and minimum values in the data.
+ * Put the data on the heap, find the maximum and minimum values, then 𝑂(𝑙𝑜𝑔𝑛)
+ * Heap structure
+  - Heap can be classified into a structure for finding the maximum value (Max Heap) and a structure for finding the minimum value (Min Heap).
+  - The value of each node is greater than or equal to the value of the child node of the node. 
+  - In the case of the minimum heap, the value of each node is greater or less than the value of the child node of the node.
+  - Has the form of a full binary tree
+ * Commonalities and differences between heap and binary search tree
+  - Common: Heap and binary search tree are both binary trees
+  - Difference: In the heap, the value of each node is greater than or equal to the child node
+  - Difference: There is no condition that a small value is left for a small value and a large value is right in a child node, which is a condition of a binary 
+  - Difference: The value of the left and right child nodes of the heap may be large on the right or large on the left.
