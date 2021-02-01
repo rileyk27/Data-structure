@@ -45,4 +45,16 @@ There may be a separate function that can extract the key for the data to be sav
      - storage space may be wasted
      - The maximum number of storage spaces must be secured in advance
      
+#6. Tree
+ * A data structure constructed so as not to form a cycle by using nodes and branches
+ * It is a structure in the form of a binary tree among trees, and is often used to implement search (search) algorithms.
+ * Word
+  - Node: The basic element that stores data in the tree (including data and branch information about other connected nodes)
+  - Root Node: Node at the top of the tree
+  - Level: When the highest node is Level 0, it indicates the depth of the node connected to the lower branch.
+  - Parent Node: A node connected to the next level of a node
+  - Child Node: A node connected to the upper level of a node
+  - Leaf Node (Terminal Node): A node without any child nodes
+  - Sibling (Brother Node): A node with the same Parent Node
+  - Depth: The maximum level that a node can have in the tree.
      
