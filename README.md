@@ -9,7 +9,6 @@
 
 ## 2. Hash
 
-<https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/315px-Hash_table_3_1_1_0_1_0_0_SP.svg.png>
 
   * A data structure that stores data in a key
      - As data can be directly received through a key, the speed is dramatically increased.
