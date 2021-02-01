@@ -28,7 +28,7 @@ There may be a separate function that can extract the key for the data to be sav
    * LifoQueue(): Last input data is first output
    * PriorityQueue(): Each data has priority, the height priority data is first output
    
-#5. Stack
+# 5. Stack
   * Structure with limited access to data
      - Structure in which data can be inserted or removed only at one end
   * Data structure from which the last accumulated data can be pulled out first
@@ -48,35 +48,35 @@ There may be a separate function that can extract the key for the data to be sav
      - storage space may be wasted
      - The maximum number of storage spaces must be secured in advance
      
-#6. Tree
+# 6. Tree
 
 ![tree](https://user-images.githubusercontent.com/48328919/106408474-264a9180-6404-11eb-9d4c-cdb719a59ab5.PNG)
 
  * A data structure constructed so as not to form a cycle by using nodes and branches
  * It is a structure in the form of a binary tree among trees, and is often used to implement search (search) algorithms.
  * Word
-  - Node: The basic element that stores data in the tree (including data and branch information about other connected nodes)
-  - Root Node: Node at the top of the tree
-  - Level: When the highest node is Level 0, it indicates the depth of the node connected to the lower branch.
-  - Parent Node: A node connected to the next level of a node
-  - Child Node: A node connected to the upper level of a node
-  - Leaf Node (Terminal Node): A node without any child nodes
-  - Sibling (Brother Node): A node with the same Parent Node
-  - Depth: The maximum level that a node can have in the tree.
+    - Node: The basic element that stores data in the tree (including data and branch information about other connected nodes)
+    - Root Node: Node at the top of the tree
+    - Level: When the highest node is Level 0, it indicates the depth of the node connected to the lower branch.
+    - Parent Node: A node connected to the next level of a node
+    - Child Node: A node connected to the upper level of a node
+    - Leaf Node (Terminal Node): A node without any child nodes
+    - Sibling (Brother Node): A node with the same Parent Node
+    - Depth: The maximum level that a node can have in the tree.
      
-#7. Heap
+# 7. Heap
 
 ![Heap](https://user-images.githubusercontent.com/48328919/106408407-0024f180-6404-11eb-8c5d-75342326d0e3.PNG)
 
  * Complete Binary Tree designed to quickly find the maximum and minimum values in the data.
  * Put the data on the heap, find the maximum and minimum values, then 𝑂(𝑙𝑜𝑔𝑛)
  * Heap structure
-  - Heap can be classified into a structure for finding the maximum value (Max Heap) and a structure for finding the minimum value (Min Heap).
-  - The value of each node is greater than or equal to the value of the child node of the node. 
-  - In the case of the minimum heap, the value of each node is greater or less than the value of the child node of the node.
-  - Has the form of a full binary tree
+    - Heap can be classified into a structure for finding the maximum value (Max Heap) and a structure for finding the minimum value (Min Heap).
+    - The value of each node is greater than or equal to the value of the child node of the node. 
+    - In the case of the minimum heap, the value of each node is greater or less than the value of the child node of the node.
+    - Has the form of a full binary tree
  * Commonalities and differences between heap and binary search tree
-  - Common: Heap and binary search tree are both binary trees
-  - Difference: In the heap, the value of each node is greater than or equal to the child node
-  - Difference: There is no condition that a small value is left for a small value and a large value is right in a child node, which is a condition of a binary 
-  - Difference: The value of the left and right child nodes of the heap may be large on the right or large on the left.
+    - Common: Heap and binary search tree are both binary trees
+    - Difference: In the heap, the value of each node is greater than or equal to the child node
+    - Difference: There is no condition that a small value is left for a small value and a large value is right in a child node, which is a condition of a binary 
+    - Difference: The value of the left and right child nodes of the heap may be large on the right or large on the left.
