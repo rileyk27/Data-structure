@@ -1,4 +1,5 @@
 #python language used
+import hashlib
 
 hash_table=list([i for i in range(10])
 
